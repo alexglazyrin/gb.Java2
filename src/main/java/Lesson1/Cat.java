@@ -1,7 +1,7 @@
 package Lesson1;
 
-public class Cat implements Action{
-    private String  name;
+public class Cat implements Action {
+    private String name;
     private int runDistance;
     private int jumpHeight;
 
@@ -23,12 +23,12 @@ public class Cat implements Action{
     }
 
     @Override
-    public int getRunDistance(){
+    public int getRunDistance() {
         return this.runDistance;
     }
 
     @Override
-    public int getJumpHeight(){
+    public int getJumpHeight() {
         return this.jumpHeight;
     }
 }
