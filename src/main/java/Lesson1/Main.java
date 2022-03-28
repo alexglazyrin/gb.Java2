@@ -14,22 +14,22 @@ public class Main {
 
         distance = rand.nextInt(1000 - 1);
         height = rand.nextInt(20 - 1);
-        actions[1] = new Robot("A7878",800,10);
+        actions[1] = new Robot("A7878", 800, 10);
 
         distance = rand.nextInt(1000 - 1);
         height = rand.nextInt(20 - 1);
-        actions[2] = new Cat("Барсик",100,4);
+        actions[2] = new Cat("Барсик", 100, 4);
 
         Obstacle[] obstacles = new Obstacle[5];
 
         boolean isTreadMil;
         for (int i = 0; i < obstacles.length; i++) {
-            distance = rand.nextInt(100-1);
+            distance = rand.nextInt(100 - 1);
             isTreadMil = rand.nextBoolean();
             if (isTreadMil) {
-                obstacles[i] = new TreadMil("Препятствие № " + (i+1) + ", расстояние : ", distance);
+                obstacles[i] = new TreadMil("Препятствие № " + (i + 1) + ", расстояние : ", distance);
             } else {
-                obstacles[i] = new Wall("Препятстиве № " + (i+1) , height);
+                obstacles[i] = new Wall("Препятстиве № " + (i + 1), height);
             }
         }
 
